@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -93,6 +86,9 @@ body {
 }
 .menu__item {
     padding: 5px;
+}
+.menu__item--home {
+    display: none;
 }
 .menu__item:not(:last-child) {
     margin-right: 10px;
@@ -255,7 +251,6 @@ body {
 /* infrastructure */
 
 .infrastructure {
-    padding: 50px 0;
     background-color: #000;
     background-image: url(../img/infrastructure/bg.jpg);
     background-size: cover;
@@ -264,6 +259,7 @@ body {
     background-attachment: fixed;
 }
 .infrastructure_black {
+    padding: 50px 0;
     background-color: rgba(0,0,0,.3);
 }
 .infrastructure__inner {
@@ -436,6 +432,9 @@ body {
         background-position: center;
         background-attachment: fixed;
     }
+    .promo__title {
+        margin-bottom: 0;
+    }
     .promo__video {
         display: none;
     }
@@ -474,7 +473,19 @@ body {
         font-size: 62px;
     }
     #infrastructure {
-        margin-top: 50px;
+        margin-top: 100px;
+    }
+    .infrastructure__item {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .infrastructure__item-slider {
+        max-width: 70vw;
+    }
+    .infrastructure__item-slider img {
+        max-height: 55vh;
+        width: 100%;
     }
     .contact__inners {
         gap: 10px;
@@ -484,12 +495,14 @@ body {
     }
     .contact__phone {
         margin-top: 0;
+        width: 80%;
+        padding: 15px 10px;
     }
     .copy, .footer__info, .developer__link {
         font-size: 18px;
     }
 }
-@media(max-width: 769px) {
+@media(max-width: 768px) {
     .header__inner {
         position: relative;
     }
@@ -501,6 +514,9 @@ body {
         -webkit-transition: all .3s ease-in;
         -o-transition: all .3s ease-in;
         transition: all .3s ease-in;
+    }
+    .menu__item--home {
+        display: block;
     }
     .menu.active {
         top: -10px;
@@ -518,16 +534,16 @@ body {
     .animation {
         -webkit-animation-name: AnimateMenuOpen;
                 animation-name: AnimateMenuOpen;
-        -webkit-animation-duration: 2s;
-                animation-duration: 2s;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
     }
     .animation-close {
         
         -webkit-animation-name: AnimateMenuClose;
         
                 animation-name: AnimateMenuClose;
-        -webkit-animation-duration: 2s;
-                animation-duration: 2s;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
     }
     .menu__list {
         -webkit-box-orient: vertical;
@@ -587,16 +603,6 @@ body {
         font-size: 38px;
         margin-bottom: 20px;
     }
-    .infrastructure  {
-        padding-top: 150px;
-    }
-    .infrastructure__item {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
-    #infrastructure{
-        margin-top: 190px;
-    }
     .contact__inners {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -607,15 +613,18 @@ body {
     .contact__inner:last-child {
         margin-top: 30px;
     }
-    .contact__phone {
-        margin-top: 0;
-    }
     .footer__inner {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
         gap: 30px;
+    }
+    .infrastructure_black {
+        padding: 140px 0 0;
+    }
+    #infrastructure {
+        margin-top: 200px;
     }
     
 }
@@ -626,14 +635,28 @@ body {
     .promo__title--big {
         font-size: 28px;
     }
-    .infrastructure  {
-        padding-top: 275px;
-    }
+    .infrastructure_black {
+        padding-top: 300px;
+    } 
     #infrastructure{
-        margin-top: 320px;
+        margin-top: 350px;
+    }
+    .infrastructure__item-descr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .contact__inner {
         font-size: 18px;
+    }
+    .map div iframe {
+        height: 60vh;
     }
 }
 

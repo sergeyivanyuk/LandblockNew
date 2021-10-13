@@ -1,8 +1,8 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  
     // Animation
-
     AOS.init(
     );
 
@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Header Color
-    
-
     document.addEventListener('scroll', () => {
       const header = document.querySelector('.header');
 
@@ -55,7 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Manu Mobile 
   const Menu = document.querySelector('.menu'),
         OpenMenuBtn = document.querySelector('.menu-open-btn'),
-        CloseMenuBtn = document.querySelector('.close-btn');
+        CloseMenuBtn = document.querySelector('.close-btn'),
+        CloseMenuBtnLink = document.querySelectorAll('.menu__link');
+        let saved_hash = location.hash;
+            location.hash = '';
 
         OpenMenuBtn.addEventListener('click', () => {
           Menu.classList.add('active');
@@ -66,5 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
           Menu.classList.remove('active');
           Menu.classList.remove('animation');
           Menu.classList.add('animation-close');
+        });
+        CloseMenuBtnLink.forEach(item => {
+          item.addEventListener('click', () => {
+            Menu.classList.remove('active');
+            Menu.classList.remove('animation');
+            Menu.classList.add('animation-close');
+          });
         });
 });

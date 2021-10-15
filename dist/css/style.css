@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -95,6 +102,7 @@ body {
 }
 .menu__link {
     font-size: 16px;
+    cursor: pointer;
     -webkit-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
     transition: all .3s ease-in;
@@ -111,6 +119,7 @@ body {
     height: 30px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 .menu-open-btn span {
     display: block;
@@ -217,7 +226,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

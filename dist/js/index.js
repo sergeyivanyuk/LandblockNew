@@ -75,4 +75,26 @@ document.addEventListener('DOMContentLoaded', () => {
             Menu.classList.add('animation-close');
           });
         });
+
+
+        // Touches
+
+        OpenMenuBtn.addEventListener('targetTouches', () => {
+          Menu.classList.add('active');
+          Menu.classList.add('animation');
+          Menu.classList.remove('animation-close');
+        });
+        CloseMenuBtn.addEventListener('targetTouches', () => {
+          Menu.classList.remove('active');
+          Menu.classList.remove('animation');
+          Menu.classList.add('animation-close');
+        });
+        CloseMenuBtnLink.forEach(item => {
+          item.addEventListener('targetTouches', () => {
+            Menu.classList.remove('active');
+            Menu.classList.remove('animation');
+            Menu.classList.add('animation-close');
+          });
+        });
+        
 });

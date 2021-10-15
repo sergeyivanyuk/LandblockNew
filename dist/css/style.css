@@ -217,6 +217,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -238,6 +239,12 @@ body {
 .promo__title--big {
     font-size: 84px;
     line-height: 1.4;
+}
+.promo__btn {
+    border-color: #fff;
+}
+.promo__btn .header__phone-arrow,  .promo__btn .header__phone-text {
+    color: #fff;
 }
 .promo__video {
     position: absolute;
@@ -430,7 +437,6 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-attachment: fixed;
     }
     .promo__title {
         margin-bottom: 0;

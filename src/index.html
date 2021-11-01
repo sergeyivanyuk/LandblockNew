@@ -20,7 +20,6 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/libs/normalize.css">
     <link rel="stylesheet" href="css/libs/swiper.css">
-    <link rel="stylesheet" href="css/libs/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Земельный квартал</title>
 </head>
@@ -29,311 +28,289 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <nav class="menu" data-aos="fade-down" data-aos-duration="1000">
+                <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item menu__item--home">
-                            <a class="menu__link" href="/index.html" onclick="">
+                        <a class="header__phone" href="tel:+79603794518 ">
+                            <span class="header__phone-text">Позвонить нам</span>
+                        </a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="/index.html">
                                 Главная
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#about" onclick="">
+                            <a class="menu__link" href="#about">
                                 О проекте
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#infrastructure" onclick="">
+                            <a class="menu__link" href="#infrastructure">
                                 Инфраструктура
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#map" onclick="">
+                            <a class="menu__link" href="#map">
                                 схема проезда
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#contact" onclick="">
+                            <a class="menu__link" href="#contacts">
                                 Контакты
                             </a>
                         </li>
-                        <li class="close-btn" onclick="">
-                            <button>X</button>
-                        </li>
                     </ul>
-                    
+                    <button class="open__menu">
+                        <span></span>
+                    </button>
+                    <button class="close__btn">
+                        <span></span>
+                    </button>
                 </nav>
-                <button class="menu-open-btn" onclick="">
-                    <span></span>
-                </button>
-                <div class="logo" data-aos="fade-down" data-aos-duration="1200">
+                <div class="logo">
                     <h1 class="logo__title">
                         <span>Земельный квартал</span>
                         <span class="logo__title--small">Участок для всей семьи</span>
                     </h1>
                 </div>
-                <a class="header__phone" href="tel:+79603794518 " data-aos="fade-down" data-aos-duration="1400">
-                    <span class="header__phone-arrow">&#8594;</span>
+                <a class="header__phone" href="tel:+79603794518 ">
                     <span class="header__phone-text">Позвонить нам</span>
                 </a>
             </div>
         </div>
     </header>
 
-     <section class="promo">
-        <h2 class="title promo__title">
-            <span class="title promo__title--small" data-aos="flip-down" data-aos-duration="1400">Земельные участки в Подмосковье</span>
-            <span class="title promo__title--big" data-aos="flip-up" data-aos-duration="1200">между лесом и рекой</span>
-        </h2>
-        <div class="promo__btns">
-            <a class="header__phone promo__btn" href="map.html " target="_blank" data-aos="fade-down" data-aos-duration="1400">
-                <span class="header__phone-arrow">&#8594;</span>
-                <span class="header__phone-text">Просмотреть участки</span>
-            </a>
-        </div>
-        <video class="promo__video" src="video/promobg.mp4" autoplay loop></video>
-    </section>
-
-    <div class="infrastructure" id="about">
-            <div class="infrastructure_black">
-                <div class="container">
-                    <div class="infrastructure__inner">
-                        <div class="infrastructure__item infrastructure__item--big">
-                            <div class="infrastructure__item-descr">
-                                <div>
-                                    <p data-aos="fade-right" data-aos-duration="1200">
-                                        Любое строительство начинается с <span>приобретения участка</span>. Многие люди принимают решение переехать жить в Подмосковье, где чистый воздух и красивая природа. 
-                                    </p>
-                                    <p data-aos="fade-left" data-aos-duration="1400">
-                                        Московская область активно застраивается и благоустраивается. Пока участки еще можно приобрести по приемлемой стоимости – не упускайте момент. <span>Притворите мечту о собственном загородном доме в реальность.</span>
-                                    </p>
-                                    <p data-aos="flip-up" data-aos-duration="1200">
-                                        Инфраструктура здесь уже достаточно развита, все коммуникации проведены. К плюсам можно отнести удаленность шумных автомобильных магистралей, отсутствие загрязняющих воздух предприятий, транспортную доступность. <span>Жить в таких условиях одно удовольствие</span>. В реке можно ловить рыбу, в лесу – собирать грибы.
-                                    </p>
-                                    <p data-aos="flip-down" data-aos-duration="1400">
-                                        <span>Покупка недвижимости загородом – это идеальное решение для тех, кто устал от жизни в мегаполисе.</span>
-                                    </p>
-                                    <p data-aos="fade-down" data-aos-duration="1400">
-                                     К плюсам покупки недвижимости в этом районе можно отнести:
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="infrastructure__item" id="infrastructure">
-                            <div class="infrastructure__item-slider">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                      <div class="swiper-slide">
-                                          <img src="img/infrastructure/slider1/1.jpg" alt="slider image">
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider1/2.jpeg" alt="slider image">
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider1/3.jpg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider1/4.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider1/5.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider1/6.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider1/7.jpeg" alt="slider image">
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="infrastructure__item-descr" data-aos="fade-right" data-aos-duration="1400">
-                                <div>
-                                "Сады на реке" расположен в 30 км от МКАД и в 2 км от ЦКАД по Фряновскому шоссе в Щелковском районе
-                                   Расстояние от Фряновского шоссе до границ поселка – не более 400 метров.
-                                </div>                      
-                            </div>
-                        </div>
-                        <div class="infrastructure__item">
-                            <div class="infrastructure__item-slider">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                      <div class="swiper-slide">
-                                          <img src="img/infrastructure/slider2/1.jpg" alt="slider image">
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider2/2.jpeg" alt="slider image">
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider2/3.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider2/4.jpg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider2/5.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider2/6.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider2/7.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider2/8.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider2/9.jpg" alt="slider image">
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="infrastructure__item-descr" data-aos="fade-left" data-aos-duration="1400">
-                                 Экологически чистое место – между лесом и рекой «Воря».
-                            </div>
-                        </div>
-                        <div class="infrastructure__item">
-                            <div class="infrastructure__item-slider">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                      <div class="swiper-slide">
-                                          <img src="img/infrastructure/slider3/1.jpg" alt="slider image">
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider3/2.jpg" alt="slider image">
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider3/3.jpg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider3/4.jpg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider3/5.jpg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider3/6.jpg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider3/7.jpg" alt="slider image">
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="infrastructure__item-descr" data-aos="fade-right" data-aos-duration="1400">
-                                Поблизости с поселком расположена деревня Каблуково, на территории которой 
-                                На выбор предлагаются участки площадью от 6 до 10 соток. «Земельный квартал» предоставляет возможность приобрести недорогие участки с газом и светом.
-                            </div>
-                        </div>
-                        <div class="infrastructure__item">
-                            <div class="infrastructure__item-slider">
-                                <img src="img/infrastructure/slider4/1.jpeg" alt="slider image">
-                            </div>
-                            <div class="infrastructure__item-descr" data-aos="fade-left" data-aos-duration="1400">
-                                расположена церковь «Спаса нерукотворного», построенная в 18 веке.
-                            </div>
-                        </div>
-                        <div class="infrastructure__item">
-                            <div class="infrastructure__item-slider">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                      <div class="swiper-slide">
-                                          <img src="img/infrastructure/slider5/1.jpg" alt="slider image">
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider5/2.jpg" alt="slider image">
-                                      </div>
-                                      <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider5/3.jpg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                        <img src="img/infrastructure/slider5/4.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider5/5.jpeg" alt="slider image">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/infrastructure/slider5/6.jpeg" alt="slider image">
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="infrastructure__item-descr" data-aos="fade-right" data-aos-duration="1400">
-                                Рядом нет высоковольтных ЛЕПа, производства , вдали от шумных трасс.
-                            </div>
-                        </div>
+    <div class="promo">
+            <div class="container">
+                <div class="promo__inner">
+                    <h1 class="title promo__title">
+                        <span>Земельные участки в Подмосковье</span> 
+                        <span class="promo__title--big">между лесом и рекой</span>
+                    </h1>
+                    <div class="promo__btns">
+                        <a class="promo__btn" href="map.html" target="_blank">Просмотр участков</a>
+                        <a class="promo__btn" href="#contacts">Связаться с нами</a>
                     </div>
+                    <ul class="promo__list">
+                        <li>Участки без подряда</li>
+                        <li>Участки от 6 до 10 соток</li>
+                        <li>Транспортная доступность</li>
+                        <li>Газ, вода, электричество</li>
+                    </ul>
                 </div>
             </div>
-        </div>
+    </div>
 
-<section class="map" id="map">
-        <h2 class="title map__title">
-            <span class="map__title--text">
-                схема проезда
-            </span>
-        </h2>
-        <div style="position: relative;">
-            <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/?ll=37.960487%2C55.896236&mode=routes&rtext=55.898947%2C37.632206~56.013034%2C38.184176&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.632%252C55.899%26spn%3D0.475%252C0.339%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%259C%25D0%259A%25D0%2590%25D0%2594~ymapsbm1%3A%2F%2Fgeo%3Fll%3D38.184%252C56.013%26spn%3D0.029%252C0.009%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B0%25D1%258F%2520%25D0%25BE%25D0%25B1%25D0%25BB%25D0%25B0%25D1%2581%25D1%2582%25D1%258C%252C%2520%25D0%25B3%25D0%25BE%25D1%2580%25D0%25BE%25D0%25B4%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B9%2520%25D0%25BE%25D0%25BA%25D1%2580%25D1%2583%25D0%25B3%2520%25D0%25A9%25D1%2591%25D0%25BB%25D0%25BA%25D0%25BE%25D0%25B2%25D0%25BE%252C%2520%25D0%25B4%25D0%25B0%25D1%2587%25D0%25BD%25D1%258B%25D0%25B9%2520%25D0%25BF%25D0%25BE%25D1%2581%25D1%2591%25D0%25BB%25D0%25BE%25D0%25BA%2520%25D0%25A1%25D0%25B0%25D0%25B4%25D1%258B%2520%25D0%25BD%25D0%25B0%2520%25D0%25A0%25D0%25B5%25D0%25BA%25D0%25B5&utm_medium=mapframe&utm_source=maps&z=10.8" style="color:#eee;font-size:12px;position:absolute;top:14px;">Навигатор онлайн: построение маршрута на карте — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUar4H1LA" ></iframe>
-        </div>
-    </section>
-
-     <section class="contact" id="contact" data-aos="flip-up" data-aos-duration="1400">
-        <h2 class="title contact__title">
-            <span class="contact__title--text">
-                Контакты
-            </span>
-        </h2>
+    <section class="about" id="about">
+        <h2 class="title about__title">О проекте</h2>
         <div class="container">
-            <div class="contact__inners">
-                <div class="contact__inner">
-                    <div class="contact__text">
-                        Если у вас остались вопросы - 
-                        напишите нам в:
-                    </div>
-                    <div class="contact__social">
-                        <a class="contact__social--link" href="https://wa.me/+79777448939" target="_blank">
-                            <img src="img/social/Whatsapp_icon.svg" alt="WhatsApp">
-                            WhatsApp
-                        </a>
-                        или
-                        <a class="contact__social--link" href="https://viber.me/+79777448939" target="_blank">
-                            <img src="img/social/viber.svg" alt="Viber">
-                            Viber
-                        </a>
-                    </div>
+            <p class="about__descr">Любое строительство начинается с приобретения участка. <br>
+                Многие люди принимают решение переехать жить в Подмосковье, где чистый воздух и
+                красивая природа. 
+            </p>
+            <p class="about__descr">
+                Покупка недвижимости загородом – это идеальное решение для тех, кто
+                устал от жизни в мегаполисе.
+            </p>
+            <p class="about__descr">
+                «Земельный квартал» предоставляет возможность приобрести <strong>недорогие
+                участки с газом и светом</strong>. <br>
+                К плюсам покупки недвижимости в этом районе можно отнести:
+            </p>
+            <div class="about__inner">
+                <div class="about_item">
+                    <img class="about_item-img" src="img/infrastructure/2.jpeg" alt="Река Воря">
+                    <p class="about_text">
+                        Экологически чистое место – <br>
+                        между лесом и рекой «Воря».
+                    </p>
                 </div>
-                <div class="contact__inner">
-                    или позвоните нам по телефонам:
-                    <a class="header__phone contact__phone" href="tel:+79603794518">
-                        <span class="header__phone-arrow">&#8594;</span>
-                        <span class="header__phone-text">Телефон №1</span>
-                    </a>
-                    <a class="header__phone contact__phone" href="tel:+9777448939">
-                        <span class="header__phone-arrow">&#8594;</span>
-                        <span class="header__phone-text">Телефон №2</span>
-                    </a>
+                <div class="about_item">
+                    <img class="about_item-img" src="img/infrastructure/1.jpeg" alt="img">
+                    <p class="about_text">
+                        Поблизости с поселком расположена деревня Каблуково, <br>
+                        на территории которой расположена церковь «Спаса нерукотворного», <br>
+                        построенная в 18 веке.
+                    </p>
+                </div>
+                <div class="about_item">
+                    <img class="about_item-img" src="img/infrastructure/1.jpg" alt="img">
+                    <p class="about_text">
+                        Рядом нет высоковольтных ЛЕПа, <br>
+                         производства , <br>
+                        вдали от шумных трасс. 
+                    </p>
+                </div>
+                <div class="about_item">
+                    <img class="about_item-img" src="img/infrastructure/4.jpg" alt="img">
+                    <p class="about_text">
+                        Расстояние от Фряновского шоссе <br>
+                        до границ поселка – <br>
+                        не более 400 метров.
+                    </p>
+                </div>
+                <div class="about_item about_item--hidden">
+                </div>
+                <div class="about_item">
+                    <img class="about_item-img" src="img/infrastructure/3.jpg" alt="img">
+                    <p class="about_text">
+                        "Сады на реке" расположен в 30 км <br>
+                         от МКАД и в 2 км от ЦКАД <br>
+                        по Фряновскому шоссе <br>
+                        в Щелковском районе.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-     <footer class="footer">
+    <section class="infrastructure" id="infrastructure">
+        <h2 class="title infrastructure__title">Инфраструктура</h2>
+        <div class="container">
+            <p class="about__descr">
+                Инфраструктура здесь уже достаточно развита, все коммуникации
+                проведены. К плюсам можно отнести удаленность шумных автомобильных
+                магистралей, отсутствие загрязняющих воздух предприятий, транспортную
+                доступность. Жить в таких условиях одно удовольствие. В реке можно
+                ловить рыбу, в лесу – собирать грибы.
+            </p>
+            <p class="about__descr">
+                На выбор предлагаются участки площадью от 6 до 10 соток, с газом, водой,
+                электричеством.
+            </p>
+            <p class="about__descr">
+                <b>Московская область</b> активно застраивается и благоустраивается. Пока
+                участки еще можно приобрести по приемлемой стоимости – не упускайте
+                момент. Притворите мечту о собственном загородном доме в реальность.
+            </p>
+            <div class="infrastructure__inner"> 
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="infrastructure__item">
+                            <img src="img/infrastructure/slider1/2.jpg" alt="Дорога" class="infrastructure__img">
+                                <h3 class="infrastructure__item-title">Отсыпанные широкие дороги из щебня</h3>
+                            </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="infrastructure__item">
+                            <img src="img/infrastructure/slider1/1.jpg" alt="Участки" class="infrastructure__img">
+                            <h3 class="infrastructure__item-title">Участки без подряда</h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="infrastructure__item">
+                            <img src="img/infrastructure/2.jpg" alt="Размер участков" class="infrastructure__img">
+                            <h3 class="infrastructure__item-title">Участки от 6 до 10 соток</h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="infrastructure__item">
+                            <img src="img/infrastructure/4.jpg" alt="Трансфер" class="infrastructure__img">
+                            <h3 class="infrastructur__item-title">Транспортная доступность</h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="infrastructure__item">
+                            <img src="img/infrastructure/slider3/5.jpg" alt="Газ" class="infrastructure__img">
+                            <h3 class="infrastructure__item-title">Газ</h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="infrastructure__item">
+                            <img src="img/infrastructure/slider3/3.jpg" alt="Вода" class="infrastructure__img">
+                            <h3 class="infrastructure__item-title">вода</h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="infrastructure__item">
+                            <img src="img/infrastructure/slider3/1.jpg" alt="Электричество" class="infrastructure__img">
+                            <h3 class="infrastructure__item-title">электричество</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map" id="map">
+        <h2 class="title">Схема проезда</h2>
+        <div class="container">
+            <div style="position:relative;">
+                <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/?ll=37.960487%2C55.896236&mode=routes&rtext=55.898947%2C37.632206~56.013034%2C38.184176&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.632%252C55.899%26spn%3D0.475%252C0.339%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%259C%25D0%259A%25D0%2590%25D0%2594~ymapsbm1%3A%2F%2Fgeo%3Fll%3D38.184%252C56.013%26spn%3D0.029%252C0.009%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B0%25D1%258F%2520%25D0%25BE%25D0%25B1%25D0%25BB%25D0%25B0%25D1%2581%25D1%2582%25D1%258C%252C%2520%25D0%25B3%25D0%25BE%25D1%2580%25D0%25BE%25D0%25B4%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B9%2520%25D0%25BE%25D0%25BA%25D1%2580%25D1%2583%25D0%25B3%2520%25D0%25A9%25D1%2591%25D0%25BB%25D0%25BA%25D0%25BE%25D0%25B2%25D0%25BE%252C%2520%25D0%25B4%25D0%25B0%25D1%2587%25D0%25BD%25D1%258B%25D0%25B9%2520%25D0%25BF%25D0%25BE%25D1%2581%25D1%2591%25D0%25BB%25D0%25BE%25D0%25BA%2520%25D0%25A1%25D0%25B0%25D0%25B4%25D1%258B%2520%25D0%25BD%25D0%25B0%2520%25D0%25A0%25D0%25B5%25D0%25BA%25D0%25B5&utm_medium=mapframe&utm_source=maps&z=10.8" style="color:#eee;font-size:12px;position:absolute;top:14px;">Навигатор онлайн: построение маршрута на карте — Яндекс.Карты</a>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUar4H1LA" frameborder="1" ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section  class="contacts">
+        <h2 class="title contacts__title">Контакты</h2>
+        <p class="about__descr">
+            Если у вас есть вопросы оставьте ваши контакты, <br> 
+            Наш менеджер свяжется с вами
+        </p>
+
+        <div class="container">
+            <div class="contacts_inner">
+                <form method="post" action="mail.php" class="contacts__form" id="contacts">
+                    <legend class="form__title">Заполните форму:</legend>
+                    <div class="inputs">
+                        <input type="text" name="name" placeholder="Ваше Имя" required>
+                        <input type="tel" name="tel" placeholder="Ваш Телефон" required>
+                    </div>
+                    <button class="form__btn" type="submit">Отправить</button>
+                </form>
+               
+                <div class="social">
+                    <p class="about__descr social__descr">
+                    напишите нам в мессенджерах:
+                    </p>
+                    <div class="social__links">
+                        <a href="https://wa.me/+79777448939" class="social__link whatsapp" target="_blank">
+                            <img src="img/social/Whatsapp_icon.svg" alt="whatsapp">
+                            напишите нам в WhatsApp
+                        </a>
+                        <a href="https://viber.me/+79777448939" class="social__link viber" target="_blank">
+                            <img src="img/social/viber.svg" alt="viber">
+                            Написать в Viber
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact__phones">
+                    <p class="about__descr social__descr">
+                        Или позвоните нам:
+                    </p>
+                    <div class="phones__links">
+                        <a class="header__phone" href="tel:+79603794518 " data-aos="fade-down" data-aos-duration="1400">
+                            <span class="phone-arrow">&#8594;</span>
+                            <span class="header__phone-text">Телефон 1</span>
+                        </a>
+                        <a class="header__phone" href="tel:+79777448939 " data-aos="fade-down" data-aos-duration="1400">
+                            <span class="phone-arrow">&#8594;</span>
+                            <span class="header__phone-text">Телефон 2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__info">
-                    Компания "Земельный квартал"
-                </div>
                 <div class="copy">
-                    &copy; Все права защищены.
+                    &copy; Все права защищены
                 </div>
-                <div class="developer">
-                    <a class="developer__link" href="https://vk.com/sergey_from" target="_blank">Разработка сайтов</a>
+                <div class="dev">
+                    <a class="footer__link" href="https://vk.com/sergey_from" target="_blank">Разработка сайтов</a>
                 </div>
             </div>
         </div>
     </footer>
     <script src="js/libs/swiper.js"></script>
-    <script src="js/libs/aos.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

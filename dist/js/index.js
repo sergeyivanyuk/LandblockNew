@@ -1,33 +1,19 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  
-    // Animation
-    AOS.init(
-    );
 
-    let swiper = new Swiper(".mySwiper", {
-      centeredSlides: true,
+    const swiper = new Swiper(".mySwiper", {
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
       },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       mousewheel: true,
       keyboard: true,
     });
-    
-    // Header Color
-    document.addEventListener('scroll', () => {
-      const header = document.querySelector('.header');
-
-      if(window.scrollY > 100) {
-        header.classList.add('white');
-      }
-      if(window.scrollY < 100) {
-        header.classList.remove('white');
-      }
-    });
-
     // Scroll
     document.querySelectorAll('a[href^="#"').forEach(link => {
 
@@ -49,52 +35,55 @@ document.addEventListener('DOMContentLoaded', () => {
           });
       });
   });
+  
+  // Menu
 
-  // Manu Mobile 
-  const Menu = document.querySelector('.menu'),
-        OpenMenuBtn = document.querySelector('.menu-open-btn'),
-        CloseMenuBtn = document.querySelector('.close-btn'),
-        CloseMenuBtnLink = document.querySelectorAll('.menu__link');
-        let saved_hash = location.hash;
-            location.hash = '';
+  const openMenu = document.querySelector('.open__menu'),
+        closeMenu = document.querySelector('.close__btn'),
+        menu = document.querySelector('.menu__list'),
+        menuLinks = document.querySelectorAll('.menu__link');
 
-        OpenMenuBtn.addEventListener('click', () => {
-          Menu.classList.add('active');
-          Menu.classList.add('animation');
-          Menu.classList.remove('animation-close');
-        });
-        CloseMenuBtn.addEventListener('click', () => {
-          Menu.classList.remove('active');
-          Menu.classList.remove('animation');
-          Menu.classList.add('animation-close');
-        });
-        CloseMenuBtnLink.forEach(item => {
-          item.addEventListener('click', () => {
-            Menu.classList.remove('active');
-            Menu.classList.remove('animation');
-            Menu.classList.add('animation-close');
-          });
-        });
+    const OpenMenu = () => {
+      openMenu.addEventListener('click', () => {
+        menu.classList.add('active');
+        closeMenu.classList.add('active');
+      });
+    };
+    OpenMenu();
 
+    const CloseMenu = () => {
+      closeMenu.addEventListener('click', () => {
+        menu.classList.remove('active');
+        closeMenu.classList.remove('active');
+      });
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('active');
+          closeMenu.classList.remove('active');
+        });
+      });
+    };
+    CloseMenu();
+    // Touches
+    const menuOpenTouch = () => {
+      openMenu.addEventListener('targetTouches', () => {
+        menu.classList.add('active');
+        closeMenu.classList.add('active');
+      });
+    };
 
-        // Touches
-
-        OpenMenuBtn.addEventListener('targetTouches', () => {
-          Menu.classList.add('active');
-          Menu.classList.add('animation');
-          Menu.classList.remove('animation-close');
+    const menuCloseTouch = () => {
+      closeMenu.addEventListener('targetTouches', () => {
+        menu.classList.remove('active');
+        closeMenu.classList.remove('active');
+      });
+      menuLinks.forEach(link => {
+        link.addEventListener('targetTouches', () => {
+          menu.classList.remove('active');
+          closeMenu.classList.remove('active');
         });
-        CloseMenuBtn.addEventListener('targetTouches', () => {
-          Menu.classList.remove('active');
-          Menu.classList.remove('animation');
-          Menu.classList.add('animation-close');
-        });
-        CloseMenuBtnLink.forEach(item => {
-          item.addEventListener('targetTouches', () => {
-            Menu.classList.remove('active');
-            Menu.classList.remove('animation');
-            Menu.classList.add('animation-close');
-          });
-        });
-        
+      });
+    };
+    menuOpenTouch();
+    menuCloseTouch();
 });

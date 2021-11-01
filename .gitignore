@@ -1,6 +1,7 @@
 /node_modules
 *.psd
 *.fig
+/.vscode
 
 # testing
 /coverage
